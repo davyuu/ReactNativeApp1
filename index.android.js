@@ -10,8 +10,8 @@ class ReactApp1 extends Component {
                 margin: 80
             }}>
                 <Component1 name="name1"/>
-                <Component1 name="name2"/>
                 <Component1 name="name3"/>
+                <Component1 name="name5"/>
             </View>
         )
     }
