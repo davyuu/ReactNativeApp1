@@ -2,7 +2,10 @@ import React, {Component} from 'react';
 import {StyleSheet, View, Text, Image, KeyboardAvoidingView} from 'react-native';
 import LoginForm from './LoginForm';
 
-export default class Login extends Component {
+export default class LoginScreen extends Component {
+	static navigationOptions = {
+		title: 'LOGIN'
+	};
 	render() {
 		return (
 			<KeyboardAvoidingView behaviour="padding" style={styles.container}>
