@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
-import {View} from 'react-native';
-import Splash from "./components/Splash/Splash"
-import Login from "./components/Login/Login"
+import {AppRegistry, View} from 'react-native';
+import {StackNavigator} from 'react-navigation';
+import SplashScreen from "./components/Splash/SplashScreen"
+import LoginScreen from "./components/Login/LoginScreen"
 
-export default class App extends Component {
-    render() {
-        return (
-            <Login />
-        )
-    }
-}
+const App = StackNavigator({
+	Splash: {
+		screen: SplashScreen
+	},
+	Login: {
+		screen: LoginScreen
+	}
+});
+
+AppRegistry.registerComponent('ReactApp1', () => App);
