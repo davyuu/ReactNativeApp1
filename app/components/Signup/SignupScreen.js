@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, Text, Image, KeyboardAvoidingView} from 'react-native';
-import LoginForm from './LoginForm';
+import SignupForm from './SignupForm';
 
-export default class LoginScreen extends Component {
+export default class SignupScreen extends Component {
 	static navigationOptions = {
-		title: 'LOGIN'
+		title: 'SIGNUP'
 	};
 	render() {
 		return (
@@ -13,7 +13,7 @@ export default class LoginScreen extends Component {
 					<Image style={styles.logo} source={require('../../images/snapchat.png')}/>
 					<Text style={styles.title}>An app made for github using React Native</Text>
 				</View>
-				<LoginForm/>
+				<SignupForm/>
 			</KeyboardAvoidingView>
 		)
 	}

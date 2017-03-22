@@ -8,7 +8,7 @@ import {
 	StatusBar
 } from 'react-native';
 
-export default class LoginForm extends Component {
+export default class SignupForm extends Component {
 	render() {
 		return (
 			<View style={styles.container}>
@@ -31,7 +31,7 @@ export default class LoginForm extends Component {
 					ref={(input) => this.passwordInput = input}/>
 
 				<TouchableOpacity style={styles.button}>
-					<Text style={styles.loginButtonText}>LOGIN</Text>
+					<Text style={styles.loginButtonText}>SIGN UP</Text>
 				</TouchableOpacity>
 			</View>
 		)
